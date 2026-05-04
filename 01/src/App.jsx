@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import React from 'react'
+import Child from './components/Child';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
 
+  const name = "Shreshth";
+  const age = 21;
+  const hobby = ["Coding", "Cricket", "Music"];
   return (
     <div>
-      
+      <h1>Parent Component</h1>
+
+      <Child name={name} age={age} hobby={hobby} />
     </div>
   )
 }
