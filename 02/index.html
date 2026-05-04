@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Like Button</title>
+</head>
+<body>
+<script>
+
+const likeButton = document.createElement("button");
+likeButton.textContent = "Like";
+
+document.body.appendChild(likeButton);
+
+likeButton.addEventListener("click", function () {
+  const message = "You liked this!";
+  
+  alert(message);
+
+  console.log(message);
+});
+</script>
+
+</body>
+</html>
